@@ -20,8 +20,16 @@ a:active {
 }
 img.rounded {
     border-radius: 1.5rem;
-    width: 50%;
-    height: auto;
+}
+@font-face {
+    font-family: 'Gill-Sans-Regular';
+    src: url(fonts/GillSans.woff2) format('woff2'),
+         url(fonts/GillSans.woff) format('woff');
+}
+@font-face {
+    font-family: 'Gill-Sans-Semibold';
+    src: url(fonts/GillSans-SemiBold.woff2) format('woff2'),
+         url(fonts/GillSans-SemiBold.woff) format('woff');
 }
 
 
@@ -33,6 +41,7 @@ img.rounded {
     padding: 35px;
 }
 .fwh h4 {
+    font-family: 'Gill-Sans-Regular';
     margin-bottom: 0;
 }
 h1.name {
@@ -42,11 +51,13 @@ h1.name {
     line-height: 0.88em; 
 }
 #tagline-description {
-    /* import fonts */
-    font-size: 1.75em;
+    font-family: 'Gill-Sans-Semibold';
+    font-size: 1.5em;
+    color: #252525;
     margin-top: 10px;
 }
 .fwh h5 {
+    font-family: 'Gill-Sans-Regular';
     font-size: 1.5em;
     text-align: center;
 }
@@ -56,9 +67,17 @@ h1.name {
     box-sizing: border-box;
     padding: 25px;
 }
+.fwh-work img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
 .work-title {
+    font-family: 'Gill-Sans-Semibold';
     display: block;
     color: #F2F3F2;
+    text-align: center;
 }
 
 
