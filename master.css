@@ -3,10 +3,13 @@ body {
     background-color: #f9fcfc;
     margin: 0;
 }
+* {
+    box-sizing: border-box;
+}
 h1 {
     color: #4E00FD;
     font-family: 'Pragati Narrow', sans-serif;
-    line-height: 0.88em;
+    line-height: 1.5rem;
 }
 .logo img {
     width: 3.5rem;
@@ -27,7 +30,7 @@ img.rounded {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 100%;
 }
 @font-face {
     font-family: 'Gill-Sans-Regular';
@@ -41,7 +44,7 @@ img.rounded {
 }
 p {
     font-family: 'Gill-Sans-Regular';
-    font-size: 1.2em;
+    font-size: 1.25rem;
 }
 
 
@@ -49,8 +52,10 @@ p {
 /* Home Page */
 .fwh {
     height: 85vh;
-    box-sizing: border-box;
-    padding: 35px;
+    padding: 2.5rem;
+    margin: auto;
+    max-width: 600px;
+    bottom: 0;
 }
 .fwh h4 {
     font-family: 'Gill-Sans-Regular';
@@ -58,50 +63,66 @@ p {
 }
 h1.name {
     text-align: left;
-    font-size: 5em;
+    font-size: 5rem;
     margin: 0;   
-    line-height: 0.88em; 
+    line-height: 4.5rem; 
 }
 #tagline-description {
     font-family: 'Gill-Sans-Semibold';
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #252525;
     margin-top: 10px;
 }
 .fwh h5 {
     font-family: 'Gill-Sans-Regular';
-    font-size: 1.5em;
+    font-size: 1.3rem;
     text-align: center;
+    padding-top: 12rem;
+    margin: 0;
 
 }
 .fwh-work {
-    height: 150vh;
-    background-image: linear-gradient(#4E00FD , #DE0AFD);
-    box-sizing: border-box;
-    padding: 25px;
+    padding: 2.5rem;
+    margin: auto;
+    max-width: 600px;
 }
-/* .fwh-work img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-} */
+#fwh-gradient {
+    min-height: 150vh;
+    background-image: linear-gradient(#4E00FD , #DE0AFD);
+}
 .work-title {
     font-family: 'Gill-Sans-Semibold';
     display: block;
     color: #F2F3F2;
-    font-size: 1.2em;
+    font-size: 1.25rem;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 45px;
 }
 
+
+
 /* Project Pages */
 .proj-fwh {
-    padding: 15px;
+    padding: 2.5rem;
+    margin: auto;
+    max-width: 600px;
+    bottom: 0;
 }
-.proj-fwh p, .proj-fwh h1{
-    padding: 25px;
-    margin: 0;
+.proj-fwh p{
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.skills ul {
+    list-style-type: none;
+    line-height: 2.5rem;
+    padding: 3rem;
+    padding-top: 0;
+    font-family: 'Gill-Sans-Regular';
+}
+#secondary-heading {
+    font-family: 'Gill-Sans-Semibold';
+    padding: 1rem;
+    padding-bottom: 0;
 }
 
