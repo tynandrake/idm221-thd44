@@ -46,6 +46,9 @@ p {
     font-family: 'Gill-Sans-Regular';
     font-size: 1.25rem;
 }
+ul {
+    font-family: 'Gill-Sans-Regular';
+}
 
 
 
@@ -118,7 +121,6 @@ h1.name {
     line-height: 2.5rem;
     padding: 3rem;
     padding-top: 0;
-    font-family: 'Gill-Sans-Regular';
 }
 #secondary-heading {
     font-family: 'Gill-Sans-Semibold';
@@ -126,3 +128,10 @@ h1.name {
     padding-bottom: 0;
 }
 
+/* Contact Page */
+.contact-list {
+    list-style-type: none;
+    line-height: 4rem;
+    padding: 3rem;
+    padding-top: 0;
+}
