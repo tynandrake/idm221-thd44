@@ -64,7 +64,7 @@ ul {
     font-family: 'Gill-Sans-Regular';
     margin-bottom: 0;
 }
-h1.name {
+#hp-name {
     text-align: left;
     font-size: 5rem;
     margin: 0;   
@@ -80,9 +80,18 @@ h1.name {
     font-family: 'Gill-Sans-Regular';
     font-size: 1.3rem;
     text-align: center;
-    padding-top: 12rem;
+    /* padding-top: 12rem; */
     margin: 0;
 
+}
+#arrow-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .fwh-work {
     padding: 2.5rem;
@@ -134,4 +143,26 @@ h1.name {
     line-height: 4rem;
     padding: 3rem;
     padding-top: 0;
+    font-size: 1.5rem;
 }
+.icons {
+    display: inline;
+    height: 2.5rem;
+    width: 2.5rem;
+    position: relative;
+    top: .75rem;
+    right: 1.5rem;
+}
+
+/* Resume Page */
+.resume-fwh {
+    padding: 2.5rem;
+    margin: auto;
+    max-width: 600px;
+    bottom: 0;
+}
+.resume-text{
+    font-size: 1rem;
+    margin: 0px;
+}
+
