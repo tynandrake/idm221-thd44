@@ -10,7 +10,7 @@ body {
 }
 h1 {
     color: #4E00FD;
-    font-family: 'IBM-Plex-Sans-Bold';
+    font-family: 'IBM-Plex-Sans-Bold', 'Gill-Sans-Semibold';
     line-height: 2rem;  
 }
 h1.name{
@@ -111,7 +111,7 @@ ul {
 }
 #hp-name {
     text-align: left;
-    font-family: 'IBM-Plex-Sans-Bold';
+    font-family: 'IBM-Plex-Sans-Bold', 'Gill-Sans-Semibold';
     font-size: 5rem;
     margin: 0;   
     line-height: 5rem; 
@@ -120,7 +120,7 @@ ul {
     font-family: 'Gill-Sans-Semibold', 'IBM-Plex-Sans-Bold', 'Chivo-Bold';
     font-size: 1.5rem;
     color: #252525;
-    margin-top: 1rem    ;
+    margin-top: 1rem;
 }
 .fwh h5 {
     font-family: 'Gill-Sans-Regular', 'IBM-Plex-Sans-Regular', 'Open-Sans-Regular';
@@ -144,9 +144,13 @@ ul {
     text-align: center;
 }
 .fwh-work {
+    margin-top: 1rem;
     padding: 1.5rem;
     margin: auto;
     max-width: 600px;
+}
+.fwh-work img.rounded {
+    margin-top: 1rem;
 }
 #fwh-gradient {
     min-height: 120vh;
@@ -158,11 +162,9 @@ ul {
     color: #F2F3F2;
     font-size: 1.25rem;
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 45px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
-
-
 
 /* Project Pages */
 .proj-fwh {
@@ -263,6 +265,6 @@ ul.footer-menu li{
     margin-bottom: 3rem;
 }
 #footer-name {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-bottom: 1rem;
 }
