@@ -20,7 +20,6 @@ h1.name{
 }
 .logo img {
     width: 3.5rem;
-    height 3.5rem;
     position: absolute;
     margin-top: 1.5rem;
     margin-left: 1.5rem;
@@ -33,7 +32,6 @@ h1.name{
     list-style: none;
     display: inline-block; 
     margin-top: 2.5rem;
-    /* margin-right: 2.5rem; */
 }
 .nav-menu a {
     display: block;
@@ -97,12 +95,15 @@ ul {
 
 /* Home Page */
 .fwh {
-    height: 85vh;
-    padding: 2.5rem;
+    min-height: calc(100vh - 66px);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     margin: auto;
     max-width: 600px;
-    bottom: 0;
-    margin-top: 8rem;
+    position: relative;
+}
+.hp-description {
+    top: 20vh;
     position: relative;
 }
 .fwh h4 {
@@ -122,26 +123,21 @@ ul {
     color: #252525;
     margin-top: 1rem;
 }
+.my_work {
+    top: 80vh;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
 .fwh h5 {
     font-family: 'Gill-Sans-Regular', 'IBM-Plex-Sans-Regular', 'Open-Sans-Regular';
     font-size: 1.3rem;
-    position: absolute;
-    top: 85%;
-    width: 100%;
-    left: 0px;
+    margin-bottom: 1rem;
     text-align: center;
 }
 #arrow-icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 2rem;
     height: 2rem;
-    position: absolute;
-    top: 91%;
     width: 100%;
-    left: 0px;
-    text-align: center;
 }
 .fwh-work {
     margin-top: 1rem;
@@ -166,17 +162,18 @@ ul {
     margin-bottom: 2rem;
 }
 
+
 /* Project Pages */
 .proj-fwh {
-    padding: 1.25rem;
+    padding: 2rem;
     margin: auto;
     max-width: 600px;
     bottom: 0;
 }
 .proj-fwh p{
     /* padding: 1rem; */
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .proj-fwh h1 {
     text-align: center;
@@ -184,56 +181,46 @@ ul {
     margin-bottom: 1.5rem;
 }
 
+
 /* About Page */
 .skills ul {
     list-style-type: none;
-    line-height: 2.5rem;
-    padding: 3rem;
+    line-height: 3rem;
+    padding: 1rem;
     padding-top: 1rem;
 }
 #secondary-heading {
     font-family: 'Gill-Sans-Semibold', 'Chivo-Bold';
-    padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 0;
 }
+.skills img {
+    width: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
 
-/* Contact Page */
-.contact-list {
-    list-style-type: none;
-    line-height: 4rem;
-    padding: 3rem;
-    padding-top: 0;
-    font-size: 1.25rem;
-}
-.icons {
-    display: inline;
-    height: 2.5rem;
-    width: 2.5rem;
-    position: relative;
-    top: .75rem;
-    right: 1.5rem;
-}
 
 /* Resume Page */
 .resume-fwh {
-    padding: 2.5rem;
+    padding: 2rem;
     margin: auto;
     max-width: 600px;
     bottom: 0;
 }
 .resume-fwh p{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .resume-section-title{
     font-family: 'Gill-Sans-Semibold', 'Chivo-Bold'; 
+    font-size: 1.25rem;
 }
 .resume-list {
     list-style: none;   
     line-height: 1.5rem;
     margin-top: 1rem;  
     margin-bottom: 1rem; 
-    padding-left: 2rem;
+    padding-left: 1.5rem;
 }
 .resume-bold {
     font-family: 'Gill-Sans-Semibold', 'Chivo-Bold'; 
@@ -247,24 +234,25 @@ ul {
     list-style: circle;
 }
 
+
 /* Footer */
 .footer {
-    height: 15vh;
-    padding: 0 2.5rem;
-    position: absolute;
+    /* margin-top: 1rem; */
+    height: 8vh;
 }
 #contact-id {
     font-family: 'Gill-Sans-Semibold', 'Chivo-Bold';
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-ul.footer-menu li{
-    list-style: none;
-    display: inline;
-    padding-right: 3vw;
-    margin-bottom: 3rem;
+.icons {
+    float: right;
+    width: 2rem;
+    margin-right: 1.5rem;
+    margin-top: 0.5rem;
 }
-#footer-name {
-    margin-top: 1rem;
-    padding-bottom: 1rem;
+.footer p {
+    float: left;
+    margin-left: 1.5rem;
+    margin-top: 1.25rem;
 }
