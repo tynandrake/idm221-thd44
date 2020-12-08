@@ -15,29 +15,85 @@ h1 {
 }
 h1.name{
     font-size: 3rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-bottom: 2rem;   
 }
-.logo img {
-    width: 3.5rem;
+
+/* Navbar */
+.navbar {
     position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    z-index: 1;
+}  
+.logo img{
+    width: 3.5rem;
     margin-top: 1.5rem;
-    margin-left: 1.5rem;
-}
-.nav-menu {
-    text-align: right;
-    margin-right: 2.5rem;
 }
 .nav-menu li {
     list-style: none;
     display: inline-block; 
-    margin-top: 2.5rem;
 }
 .nav-menu a {
     display: block;
     padding: 0.25rem 0.5rem 0.25rem;
     text-decoration: none;
 }
+
+/* NavBar Hamburger Menu */
+.menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-btn_burger,
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+    width: 1.75rem;
+    height: 3px;
+    border-radius: 30px;
+    background-color: #4E00FD;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+    content: "";
+    position: absolute;
+}
+.menu-btn_burger::before {
+    transform: translateY(-0.5rem);
+}
+.menu-btn_burger::after {
+    transform: translateY(0.5rem);
+}
+
+/* Animation for hamburger menu*/
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(2rem);
+    background: transparent;
+}
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+    background-color: #F2F3F2;
+}
+.menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+    background-color: #F2F3F2;
+}
+
+/* Links and Images */
 a {
     color: #454545;
     text-decoration: none;
@@ -47,12 +103,14 @@ a:active {
     text-decoration: underline;
 }
 img.rounded {
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
+
+/* Fonts */
 @font-face {
     font-family: 'Gill-Sans-Regular';
     src: url(fonts/GillSans.woff2) format('woff2'),
@@ -83,6 +141,7 @@ img.rounded {
     src: url(fonts/IBMPlexSans-Bold.woff2) format('woff2'),
          url(fonts/IBMPlexSans-Bold.woff) format('woff');
 }
+/* Universal Text Changes */
 p {
     font-family: 'Gill-Sans-Regular', 'IBM-Plex-Sans-Regular', 'Open-Sans-Regular';
     font-size: 1.25rem;
@@ -95,7 +154,7 @@ ul {
 
 /* Home Page */
 .fwh {
-    min-height: calc(100vh - 66px);
+    min-height: 100vh;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     margin: auto;
@@ -103,7 +162,7 @@ ul {
     position: relative;
 }
 .hp-description {
-    top: 20vh;
+    top: 30vh;
     position: relative;
 }
 .fwh h4 {
@@ -124,7 +183,7 @@ ul {
     margin-top: 1rem;
 }
 .my_work {
-    top: 80vh;
+    top: 87vh;
     position: absolute;
     width: 100%;
     left: 0;
@@ -177,12 +236,19 @@ ul {
 }
 .proj-fwh h1 {
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.proj-img {
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 
-/* About Page */
+/* Abou Me Page */
 .skills ul {
     list-style-type: none;
     line-height: 3rem;
@@ -198,6 +264,30 @@ ul {
     width: 2rem;
     margin-right: 1rem;
     vertical-align: middle;
+}
+#graphic-design {
+    position: relative;
+    top: 3px;
+}
+#adobe-suite {
+    position: relative;
+    top: 2px;
+}
+#user-research {
+    position: relative;
+    top: 2px;
+}
+#html-css {
+    position: relative;
+    top: 2px;
+}
+#photography {
+    position: relative;
+    top: 3px;
+}
+#video-editing {
+    position: relative;
+    top: 2px;
 }
 
 
@@ -233,12 +323,28 @@ ul {
 .resume-desc {
     list-style: circle;
 }
+.button {
+    padding: 1rem 0;
+    text-align: center;
+}
+#button-style {
+    font-family: 'Gill-Sans-Semibold', 'Chivo-Bold';
+    justify-content: center;
+    border: none;
+    background-color: #4E00FD;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: .75rem 1rem;
+}
+#button-style a{
+    color: #F2F3F2;
+}
 
 
 /* Footer */
 .footer {
     /* margin-top: 1rem; */
-    height: 8vh;
+    height: 7vh;
 }
 #contact-id {
     font-family: 'Gill-Sans-Semibold', 'Chivo-Bold';
@@ -255,4 +361,39 @@ ul {
     float: left;
     margin-left: 1.5rem;
     margin-top: 1.25rem;
+}
+
+/* Media query - mobile */
+@media (max-width: 767px) {
+    .menu-btn {
+        display: flex;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(100vw);
+        background-color: #4E00FD;
+        transition: transform 0.3s ease-in-out;
+    }
+    .nav-menu li {
+        display: flex;
+        margin-top: 1rem;
+    }
+    .nav-menu a {
+        color: #F2F3F2;
+        font-size: 2.25rem;
+    }
+    .nav-menu.open {
+        transform: translateX(0);
+    }
+    .menu-items {
+        position: relative;
+        top: 60vh;
+        right: 1.5rem;
+        float: right;
+        direction: rtl;
+    }
 }

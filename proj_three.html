@@ -4,34 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project 3</title>
+    <title>Tynan Drake | Project 3</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <header>
-        <div class="menu">
-            <span class="bar"></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+            <img src="images/logo.png" alt="image of logo" >
+        </a>  
         </div>
-        <nav>
-            <div>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="image of logo">
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="resume.html" class="resume">Resume</a></li>
-                    <li><a href="about_me.html" class="about">About Me</a></li>
-                    <!-- <li><a href="contact.html" class="contact">Contact</a></li> -->
-                </ul>
+        <div class="menu-btn">
+            <div class="menu-btn_burger"></div>
+        </div>
+        <ul class="nav-menu">
+            <div class="menu-items">
+                <li><a href="index.html#fwh-gradient">My Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about_me.html">About Me</a></li>  
             </div>
-        </nav>
+        </ul>
     </header>
         
+    <!-- Project 3 Content -->
     <div class="proj-fwh">
         <h1>Interaction Design Exploration</h1>
-        <img src="images/proj3_final_prototype.jpg" alt="image of app prototype" class="rounded">
+        <img src="images/proj3_final_prototype.jpg" alt="image of app prototype" class="proj-img">
         <p> 
             In my third term in school, we were tasked with redesigning the task flow of an application of our choice, 
             this time, focusing on the micro-interactions that encompassed the task-flow. I choose to redesign the 
@@ -44,8 +45,8 @@
             During this stage, examining the original application and the interaction was essential. Having a baseline to build 
             off of allowed me to create the interactions that I felt would improve the existing application.
         </p>
-        <img src="images/proj3_initial_appflow.jpg" alt="image of app-flow of original application" class="rounded">
-        <img src="images/proj3_app_flow.jpg" alt="image of redesigned app-flow" class="rounded">
+        <img src="images/proj3_initial_appflow.jpg" alt="image of app-flow of original application" class="proj-img">
+        <img src="images/proj3_app_flow.jpg" alt="image of redesigned app-flow" class="proj-img">
         <p>
             I found that the flow of the existing application was lacking engaging interactions and needed an overhauled color-palette. 
             I didn’t adjust the actual flow of how the app worked, and instead focused on making the experience more engaging and visually appealing.
@@ -55,7 +56,7 @@
             use of Adobe After Effects. I had some experience working with this application prior to this course, so I continued to push my skills 
             within the applications and learn more advanced techniques.
         </p>
-        <img src="images/proj3_aftereffects_process.jpg" alt="example of after effects animation work" class="rounded">
+        <img src="images/proj3_aftereffects_process.jpg" alt="example of after effects animation work" class="proj-img">
         <p> 
             Creating unique, engaging interactions was both a challenging and rewarding experience. I did lots of research, testing, and 
             experimentation during this stage. I examined the applications that I use on a daily basis to see how these applications implemented 
@@ -64,18 +65,18 @@
         <p> 
             Bringing these interactions to life from the initial sketching phase into in After Effects with fleshed out motion and detail was very rewarding.
         </p>
-        <img src="images/proj3_interaction_prototype.jpeg" alt="image of interactions prototypes" class="rounded">
-        <!-- include gifs of animations -->
-        
+        <img src="images/proj3_interaction_prototype.jpeg" alt="image of interactions prototypes" class="proj-img">
         <p>
             Overall, I found that the focus on interactions for this third design project made for a very engaging and different type of 
             creative process. Instead of purely thinking about the design and layouts of the prototype, I had to think about the motion and 
             interactions that a user would experience when using the application. This pushed me both creatively and technically and was an 
             engaging learning experience.
         </p>
-
-        <!-- create one final image showcasing final prototypes - see Wordpress site for example -->
+        <img src="images/proj3_final_prototype-1.jpg" alt="image of final prototype" class="proj-img">
+        <img src="images/proj3_final_prototype-2.jpg" alt="image of final prototype" class="proj-img">
     </div>
+    
+    <!-- Footer -->
     <footer class="footer">
         <p>Tynan Drake</p>
         <a href="https://www.instagram.com/thd.design/">
@@ -85,5 +86,6 @@
             <img src="images/linkedin.svg" alt="linkedin icon" class="icons">
         </a>  
     </footer> 
+    <script src="main.js"></script>
 </body>
 </html>

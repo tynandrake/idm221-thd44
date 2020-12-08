@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume</title>
+    <title>Tynan Drake | Resume</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <header>
-        <div class="menu">
-            <span class="bar"></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+            <img src="images/logo.png" alt="image of logo" >
+        </a>  
         </div>
-        <nav>
-            <div>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="image of logo">
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="resume.html" class="resume">Resume</a></li>
-                    <li><a href="about_me.html" class="about">About Me</a></li>
-                    <!-- <li><a href="contact.html" class="contact">Contact</a></li> -->
-                </ul>
+        <div class="menu-btn">
+            <div class="menu-btn_burger"></div>
+        </div>
+        <ul class="nav-menu">
+            <div class="menu-items">
+                <li><a href="index.html#fwh-gradient">My Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about_me.html">About Me</a></li>  
             </div>
-        </nav>
+        </ul>
     </header>
         
+    <!-- Resume Content -->
     <div class="resume-fwh">
         <h1 class="name">Resume</h1>
         <h3 class="resume-section-title">Education</h3>
@@ -110,7 +111,14 @@
                 <li>Member, American Institute of Graphic Arts, Philadelphia Chapter, 2020 - Present</li>
                 <li>Captain, Soccer Team, Salesianum High School, Wilmington, DE, 2015 - 2016</li>
             </ul>
+        <div class="button">
+            <button id="button-style">
+                <a href="images/tynandrake-resume.pdf" target="_blank">Download PDF</a>
+            </button>
+        </div>
     </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <p>Tynan Drake</p>
         <a href="https://www.instagram.com/thd.design/">
@@ -120,5 +128,6 @@
             <img src="images/linkedin.svg" alt="linkedin icon" class="icons">
         </a>  
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

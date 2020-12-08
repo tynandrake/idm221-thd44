@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
+    <title>Tynan Drake | Portfolio</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
-
 <body>
+    <!-- Navbar -->
     <header class="navbar">
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="image of logo">
-                </a>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="image of logo" >
+        </a>  
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn_burger"></div>
+        </div>
+        <ul class="nav-menu">
+            <div class="menu-items">
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about_me.html">About Me</a></li>  
             </div>
-            <ul class="nav-menu">
-                <li><a href="resume.html" class="resume">Resume</a></li>
-                <li><a href="about_me.html" class="about">About Me</a></li>
-            </ul>
-        </nav>
+        </ul>
     </header>
-    
+
+    <!-- Main Elements -->
     <div class="fwh">
         <div class="hp-description">
             <h4>UI/UX Designer</h4>
@@ -37,12 +42,13 @@
             <img src="images/arrow.svg" alt="arrow down icon" id="arrow-icon">
         </div>
     </div>
-        
+
+    <!-- My Work Section -->
     <div id="fwh-gradient">
         <div class="fwh-work">
             <div class="proj-one">
                 <a href="proj_one.html">
-                    <img src="images/proj1-thumb.jpg" alt="project 1 thumbnail" class="rounded">
+                    <img src="images/proj1-thumb-2.jpg" alt="project 1 thumbnail" class="rounded">
                 </a>
                 <a href="proj_one.html" class="work-title">Philadelphia Union Redesign</a>  
             </div>
@@ -60,6 +66,8 @@
             </div>  
         </div>
     </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <p>Tynan Drake</p>
         <a href="https://www.instagram.com/thd.design/">
@@ -69,5 +77,6 @@
             <img src="images/linkedin.svg" alt="linkedin icon" class="icons">
         </a>  
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

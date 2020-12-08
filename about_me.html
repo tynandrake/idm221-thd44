@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
+    <title>Tynan Drake | About Me</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <header>
-        <div class="menu">
-            <span class="bar"></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+            <img src="images/logo.png" alt="image of logo" >
+        </a>  
         </div>
-        <nav>
-            <div>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="image of logo">
-                    </a>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="resume.html" class="resume">Resume</a></li>
-                    <li><a href="about_me.html" class="about">About Me</a></li>
-                    <!-- <li><a href="contact.html" class="contact">Contact</a></li> -->
-                </ul>
+        <div class="menu-btn">
+            <div class="menu-btn_burger"></div>
+        </div>
+        <ul class="nav-menu">
+            <div class="menu-items">
+                <li><a href="index.html#fwh-gradient">My Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about_me.html">About Me</a></li>  
             </div>
-        </nav>
-        </header>
+        </ul>
+    </header>
+
+    <!-- About Me Content -->
     <div class="resume-fwh">
         <h1 class="name">About Me</h1>
         <p> 
@@ -42,35 +44,37 @@
             <ul>
                 <li>
                     <img src="images/ui_design.svg" alt="icon for ui design">
-                    User-interface Design  
+                    <span id="ui-design">User-interface Design </span> 
                 </li>
                 <li>
                     <img src="images/graphic_design.svg" alt="icon for graphic design">
-                    Graphic Design
+                    <span id="graphic-design">Graphic Design</span>
                 </li>
                 <li>
                     <img src="images/adobe_suite.svg" alt="icon for adobe suite">
-                    Adobe Suite Applications
+                    <span id="adobe-suite">Adobe Suite Applications</span>
                 </li>
                 <li>
                     <img src="images/research.svg" alt="icon for research">
-                    User-Research
+                    <span id="user-research">User-Research</span>
                 </li>
                 <li>
                     <img src="images/html.svg" alt="icon for html5">
-                    HTML, CSS
+                    <span id="html-css">HTML, CSS</span>
                 </li>
                 <li>
                     <img src="images/photography.svg" alt="icon for photography">
-                    Photography
+                    <span id="photography">Photography</span>
                 </li>
                 <li>
                     <img src="images/video_editing.svg" alt="icon for video editing">
-                    Video Editing
+                    <span id="video-editing">Video Editing</span>
                 </li>
             </ul>
         </div>  
     </div>
+    
+    <!-- Footer -->
     <footer class="footer">
         <p>Tynan Drake</p>
         <a href="https://www.instagram.com/thd.design/">
@@ -80,5 +84,6 @@
             <img src="images/linkedin.svg" alt="linkedin icon" class="icons">
         </a>  
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
