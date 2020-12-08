@@ -324,21 +324,21 @@ ul {
     list-style: circle;
 }
 .button {
-    padding: 1rem 0;
     text-align: center;
+    padding: 1rem;
 }
-#button-style {
-    font-family: 'Gill-Sans-Semibold', 'Chivo-Bold';
-    justify-content: center;
-    border: none;
-    background-color: #4E00FD;
-    border-radius: 1.5rem;
-    text-align: center;
-    padding: .75rem 1rem;
+.myButton {
+	background-color: #4E00FD;
+	border-radius:28px;
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Gill-Sans-Semibold', 'Chivo-Bold'; 
+    padding: 0.75rem 1rem;
 }
-#button-style a{
-    color: #F2F3F2;
-}
+
+
 
 
 /* Footer */
@@ -369,6 +369,7 @@ ul {
         display: flex;
     }
     .nav-menu {
+        font-family: 'Gill-Sans-Regular', 'IBM-Plex-Sans-Regular', 'Open-Sans-Regular'; 
         position: fixed;
         top: 0;
         right: 0;
